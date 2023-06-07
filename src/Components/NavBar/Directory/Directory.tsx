@@ -18,7 +18,7 @@ import useDirectory from "@/Hooks/useDirectory";
 const UserMenu: React.FC = () => {
 	const setAuthModalState = useSetRecoilState(AuthModalState);
 	const { directoryState, toggleMenuOpen } = useDirectory();
-	console.log(directoryState);
+
 	return (
 		<Menu isOpen={directoryState.isOpen}>
 			<MenuButton

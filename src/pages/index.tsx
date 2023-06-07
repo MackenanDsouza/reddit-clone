@@ -43,7 +43,7 @@ export default function Home() {
 		try {
 			if (communityStateValue.mySnippets.length) {
 				//get posts from users communities
-				console.log(communityStateValue.mySnippets);
+				
 				const myCommunityIds = communityStateValue.mySnippets.map(
 					(snippet) => snippet.communityId
 				);
@@ -61,7 +61,7 @@ export default function Home() {
 					...prev,
 					posts: posts as Post[],
 				}));
-				console.log(posts);
+				
 			} else {
 				buildNoUserHomeFeed();
 			}
